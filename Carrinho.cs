@@ -14,6 +14,7 @@ namespace Aula24
         public void AdicionarProduto(Produto produto){
             carrinho.Add(produto);
         }
+        //Remover produto
         public void RemoverProduto(Produto produto){
             carrinho.Remove(produto);
         }
@@ -22,7 +23,7 @@ namespace Aula24
             if(carrinho !=null){
                 foreach(Produto p in carrinho)
                 {
-                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine($"R$ {p.Preco.ToString("n2")} - {p.Nome}");
                     Console.ResetColor();
                 }
